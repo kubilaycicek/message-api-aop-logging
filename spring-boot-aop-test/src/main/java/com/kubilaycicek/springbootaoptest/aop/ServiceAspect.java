@@ -16,22 +16,22 @@ public class ServiceAspect {
     @Before("execution(* com.kubilaycicek.springbootaoptest.service.*.*(..))")
     public void before(JoinPoint joinPoint) {
 
-        log.info(new StringBuilder().append("Before").append(SIGNATURE_TEXT + joinPoint.getSignature() + " ").append(THIS_TEXT + joinPoint.getThis()).toString());
+        log.info("Before " + SIGNATURE_TEXT + joinPoint.getSignature() + " " + THIS_TEXT + " " + joinPoint.getThis());
     }
 
     @After("execution(* com.kubilaycicek.springbootaoptest.service.*.*(..))")
     public void after(JoinPoint joinPoint) {
-        log.info(new StringBuilder().append("After").append(SIGNATURE_TEXT + joinPoint.getSignature() + " ").append(THIS_TEXT + joinPoint.getThis()).toString());
+        log.info("After " + SIGNATURE_TEXT + joinPoint.getSignature() + " " + THIS_TEXT + " " + joinPoint.getThis());
     }
 
     @AfterReturning("execution(* com.kubilaycicek.springbootaoptest.service.*.*(..))")
     public void afterReturning(JoinPoint joinPoint) {
-        log.info(new StringBuilder().append("After Returning").append(SIGNATURE_TEXT + joinPoint.getSignature() + " ").append(THIS_TEXT + joinPoint.getThis()).toString());
+        log.info("After Returning" + SIGNATURE_TEXT + joinPoint.getSignature() + " " + THIS_TEXT + " " + joinPoint.getThis());
     }
 
     @AfterThrowing("execution(* com.kubilaycicek.springbootaoptest.service.*.*(..))")
     public void afterThrowing(JoinPoint joinPoint) {
-        log.error(new StringBuilder().append("After Throwing").append(SIGNATURE_TEXT + joinPoint.getSignature() + " ").append(THIS_TEXT + joinPoint.getThis()).toString());
+        log.info("After Throwing" + SIGNATURE_TEXT + joinPoint.getSignature() + " " + THIS_TEXT + " " + joinPoint.getThis());
     }
 
 }
