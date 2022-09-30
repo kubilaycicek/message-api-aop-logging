@@ -1,0 +1,6 @@
+2022-09-24 13:06:06.521  INFO 23880 --- [main] c.k.s.SpringBootAopTestApplicationTests  : Starting SpringBootAopTestApplicationTests using Java 11.0.15 on DESKTOP-U8QMRCG with PID 23880 (started by MONSTER in D:\Projects\Applications\message-api-aop-logging\spring-boot-aop-test)
+2022-09-24 13:06:06.524  INFO 23880 --- [main] c.k.s.SpringBootAopTestApplicationTests  : No active profile set, falling back to default profiles: default
+2022-09-24 13:06:08.813  INFO 23880 --- [main] c.k.s.SpringBootAopTestApplicationTests  : Started SpringBootAopTestApplicationTests in 2.6 seconds (JVM running for 3.952)
+2022-09-24 13:33:10.747  INFO 16524 --- [main] c.k.s.SpringBootAopTestApplicationTests  : Starting SpringBootAopTestApplicationTests using Java 11.0.15 on DESKTOP-U8QMRCG with PID 16524 (started by MONSTER in D:\Projects\Applications\message-api-aop-logging\spring-boot-aop-test)
+2022-09-24 13:33:10.750  INFO 16524 --- [main] c.k.s.SpringBootAopTestApplicationTests  : No active profile set, falling back to default profiles: default
+2022-09-24 13:33:12.593  INFO 16524 --- [main] c.k.s.SpringBootAopTestApplicationTests  : Started SpringBootAopTestApplicationTests in 2.13 seconds (JVM running for 3.515)
