@@ -1,5 +1,6 @@
 package com.kubilaycicek.springbootaoptest.controller;
 
+import com.kubilaycicek.springbootaoptest.annotation.LogExecutionTime;
 import com.kubilaycicek.springbootaoptest.service.MessageService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
@@ -21,5 +22,11 @@ public class MessageController {
 	@PostMapping(value = "/checkMessage",produces = MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<String> checkMessage(@RequestBody(required = false) String message) {
 		return ResponseEntity.ok(messageService.checkMessage(message));
+	}
+
+	@LogExecutionTime
+	@GetMapping(produces = MediaType.APPLICATION_JSON_VALUE,value = "/sayhello")
+	public ResponseEntity<String> sayHello(){
+		return ResponseEntity.ok(messageService.sayHello());
 	}
 }

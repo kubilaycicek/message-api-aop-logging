@@ -1,6 +1,614 @@
-2022-09-24 13:06:06.521  INFO 23880 --- [main] c.k.s.SpringBootAopTestApplicationTests  : Starting SpringBootAopTestApplicationTests using Java 11.0.15 on DESKTOP-U8QMRCG with PID 23880 (started by MONSTER in D:\Projects\Applications\message-api-aop-logging\spring-boot-aop-test)
-2022-09-24 13:06:06.524  INFO 23880 --- [main] c.k.s.SpringBootAopTestApplicationTests  : No active profile set, falling back to default profiles: default
-2022-09-24 13:06:08.813  INFO 23880 --- [main] c.k.s.SpringBootAopTestApplicationTests  : Started SpringBootAopTestApplicationTests in 2.6 seconds (JVM running for 3.952)
-2022-09-24 13:33:10.747  INFO 16524 --- [main] c.k.s.SpringBootAopTestApplicationTests  : Starting SpringBootAopTestApplicationTests using Java 11.0.15 on DESKTOP-U8QMRCG with PID 16524 (started by MONSTER in D:\Projects\Applications\message-api-aop-logging\spring-boot-aop-test)
-2022-09-24 13:33:10.750  INFO 16524 --- [main] c.k.s.SpringBootAopTestApplicationTests  : No active profile set, falling back to default profiles: default
-2022-09-24 13:33:12.593  INFO 16524 --- [main] c.k.s.SpringBootAopTestApplicationTests  : Started SpringBootAopTestApplicationTests in 2.13 seconds (JVM running for 3.515)
+2022-12-22 15:29:14.651  INFO 15140 --- [main] c.k.s.SpringBootAopTestApplication       : Starting SpringBootAopTestApplication using Java 19 on DESKTOP-JRVLSME with PID 15140 (C:\Users\PREDATOR\Desktop\AOP\spring-boot-aop-test\target\classes started by PREDATOR in C:\Users\PREDATOR\Desktop\AOP\spring-boot-aop-test)
+2022-12-22 15:29:14.656  INFO 15140 --- [main] c.k.s.SpringBootAopTestApplication       : No active profile set, falling back to default profiles: default
+2022-12-22 15:29:15.528  INFO 15140 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-12-22 15:29:15.538  INFO 15140 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-22 15:29:15.538  INFO 15140 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-12-22 15:29:15.608  INFO 15140 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/chat]   : Initializing Spring embedded WebApplicationContext
+2022-12-22 15:29:15.609  INFO 15140 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 913 ms
+2022-12-22 15:29:16.025  INFO 15140 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path '/chat'
+2022-12-22 15:29:16.033  INFO 15140 --- [main] c.k.s.SpringBootAopTestApplication       : Started SpringBootAopTestApplication in 1.704 seconds (JVM running for 2.218)
+2022-12-22 15:29:28.031  INFO 15140 --- [http-nio-127.0.0.1-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/chat]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-22 15:29:28.031  INFO 15140 --- [http-nio-127.0.0.1-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-12-22 15:29:28.032  INFO 15140 --- [http-nio-127.0.0.1-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-12-22 15:29:28.048  INFO 15140 --- [http-nio-127.0.0.1-9090-exec-1] c.k.springbootaoptest.aop.ServiceAspect  : Before Signature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.sayHello() This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@62a77d50
+2022-12-22 15:29:28.059  INFO 15140 --- [http-nio-127.0.0.1-9090-exec-1] c.k.springbootaoptest.aop.ServiceAspect  : After ReturningSignature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.sayHello() This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@62a77d50
+2022-12-22 15:29:28.060  INFO 15140 --- [http-nio-127.0.0.1-9090-exec-1] c.k.springbootaoptest.aop.ServiceAspect  : After Signature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.sayHello() This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@62a77d50
+2022-12-22 15:29:49.307  INFO 15140 --- [http-nio-127.0.0.1-9090-exec-2] c.k.springbootaoptest.aop.ServiceAspect  : Before Signature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.sayHello() This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@62a77d50
+2022-12-22 15:29:49.308  INFO 15140 --- [http-nio-127.0.0.1-9090-exec-2] c.k.springbootaoptest.aop.ServiceAspect  : After ReturningSignature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.sayHello() This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@62a77d50
+2022-12-22 15:29:49.308  INFO 15140 --- [http-nio-127.0.0.1-9090-exec-2] c.k.springbootaoptest.aop.ServiceAspect  : After Signature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.sayHello() This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@62a77d50
+2022-12-22 15:31:09.113  INFO 16320 --- [main] c.k.s.SpringBootAopTestApplication       : Starting SpringBootAopTestApplication using Java 19 on DESKTOP-JRVLSME with PID 16320 (C:\Users\PREDATOR\Desktop\AOP\spring-boot-aop-test\target\classes started by PREDATOR in C:\Users\PREDATOR\Desktop\AOP\spring-boot-aop-test)
+2022-12-22 15:31:09.115  INFO 16320 --- [main] c.k.s.SpringBootAopTestApplication       : No active profile set, falling back to default profiles: default
+2022-12-22 15:31:09.672  INFO 16320 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-12-22 15:31:09.679  INFO 16320 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-22 15:31:09.679  INFO 16320 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-12-22 15:31:09.733  INFO 16320 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/chat]   : Initializing Spring embedded WebApplicationContext
+2022-12-22 15:31:09.733  INFO 16320 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 586 ms
+2022-12-22 15:31:09.976  INFO 16320 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path '/chat'
+2022-12-22 15:31:09.982  INFO 16320 --- [main] c.k.s.SpringBootAopTestApplication       : Started SpringBootAopTestApplication in 1.134 seconds (JVM running for 1.551)
+2022-12-22 15:31:12.128  INFO 16320 --- [http-nio-127.0.0.1-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/chat]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-22 15:31:12.129  INFO 16320 --- [http-nio-127.0.0.1-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-12-22 15:31:12.129  INFO 16320 --- [http-nio-127.0.0.1-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-12-22 15:31:27.778  INFO 15448 --- [main] c.k.s.SpringBootAopTestApplication       : Starting SpringBootAopTestApplication using Java 19 on DESKTOP-JRVLSME with PID 15448 (C:\Users\PREDATOR\Desktop\AOP\spring-boot-aop-test\target\classes started by PREDATOR in C:\Users\PREDATOR\Desktop\AOP\spring-boot-aop-test)
+2022-12-22 15:31:27.779  INFO 15448 --- [main] c.k.s.SpringBootAopTestApplication       : No active profile set, falling back to default profiles: default
+2022-12-22 15:31:28.517  INFO 15448 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-12-22 15:31:28.526  INFO 15448 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-22 15:31:28.526  INFO 15448 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-12-22 15:31:28.580  INFO 15448 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/chat]   : Initializing Spring embedded WebApplicationContext
+2022-12-22 15:31:28.580  INFO 15448 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 768 ms
+2022-12-22 15:31:29.069  INFO 15448 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path '/chat'
+2022-12-22 15:31:29.075  INFO 15448 --- [main] c.k.s.SpringBootAopTestApplication       : Started SpringBootAopTestApplication in 1.603 seconds (JVM running for 2.069)
+2022-12-22 15:31:31.811  INFO 15448 --- [http-nio-127.0.0.1-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/chat]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-22 15:31:31.811  INFO 15448 --- [http-nio-127.0.0.1-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-12-22 15:31:31.812  INFO 15448 --- [http-nio-127.0.0.1-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-12-22 15:31:31.828  INFO 15448 --- [http-nio-127.0.0.1-9090-exec-1] c.k.springbootaoptest.aop.ServiceAspect  : Before Signature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.sayHello() This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@74d2e570
+2022-12-22 15:31:31.838  INFO 15448 --- [http-nio-127.0.0.1-9090-exec-1] c.k.springbootaoptest.aop.ServiceAspect  : After ReturningSignature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.sayHello() This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@74d2e570
+2022-12-22 15:31:31.839  INFO 15448 --- [http-nio-127.0.0.1-9090-exec-1] c.k.springbootaoptest.aop.ServiceAspect  : After Signature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.sayHello() This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@74d2e570
+2022-12-22 15:31:33.465  INFO 15448 --- [http-nio-127.0.0.1-9090-exec-2] c.k.springbootaoptest.aop.ServiceAspect  : Before Signature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.sayHello() This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@74d2e570
+2022-12-22 15:31:33.466  INFO 15448 --- [http-nio-127.0.0.1-9090-exec-2] c.k.springbootaoptest.aop.ServiceAspect  : After ReturningSignature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.sayHello() This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@74d2e570
+2022-12-22 15:31:33.466  INFO 15448 --- [http-nio-127.0.0.1-9090-exec-2] c.k.springbootaoptest.aop.ServiceAspect  : After Signature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.sayHello() This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@74d2e570
+2022-12-22 15:31:41.732  INFO 12124 --- [main] c.k.s.SpringBootAopTestApplication       : Starting SpringBootAopTestApplication using Java 19 on DESKTOP-JRVLSME with PID 12124 (C:\Users\PREDATOR\Desktop\AOP\spring-boot-aop-test\target\classes started by PREDATOR in C:\Users\PREDATOR\Desktop\AOP\spring-boot-aop-test)
+2022-12-22 15:31:41.734  INFO 12124 --- [main] c.k.s.SpringBootAopTestApplication       : No active profile set, falling back to default profiles: default
+2022-12-22 15:31:42.532  INFO 12124 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-12-22 15:31:42.540  INFO 12124 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-22 15:31:42.541  INFO 12124 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-12-22 15:31:42.590  INFO 12124 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/chat]   : Initializing Spring embedded WebApplicationContext
+2022-12-22 15:31:42.592  INFO 12124 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 825 ms
+2022-12-22 15:31:43.005  INFO 12124 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path '/chat'
+2022-12-22 15:31:43.011  INFO 12124 --- [main] c.k.s.SpringBootAopTestApplication       : Started SpringBootAopTestApplication in 1.532 seconds (JVM running for 1.925)
+2022-12-22 15:31:44.503  INFO 12124 --- [http-nio-127.0.0.1-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/chat]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-22 15:31:44.503  INFO 12124 --- [http-nio-127.0.0.1-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-12-22 15:31:44.504  INFO 12124 --- [http-nio-127.0.0.1-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-12-22 15:31:44.518  INFO 12124 --- [http-nio-127.0.0.1-9090-exec-1] c.k.springbootaoptest.aop.ServiceAspect  : Before Signature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.sayHello() This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@e40029b
+2022-12-22 15:31:44.529  INFO 12124 --- [http-nio-127.0.0.1-9090-exec-1] c.k.springbootaoptest.aop.ServiceAspect  : After ReturningSignature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.sayHello() This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@e40029b
+2022-12-22 15:31:44.529  INFO 12124 --- [http-nio-127.0.0.1-9090-exec-1] c.k.springbootaoptest.aop.ServiceAspect  : After Signature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.sayHello() This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@e40029b
+2022-12-22 15:45:25.167  INFO 13400 --- [main] c.k.s.SpringBootAopTestApplication       : Starting SpringBootAopTestApplication using Java 19 on DESKTOP-JRVLSME with PID 13400 (C:\Users\PREDATOR\Desktop\AOP\spring-boot-aop-test\target\classes started by PREDATOR in C:\Users\PREDATOR\Desktop\AOP\spring-boot-aop-test)
+2022-12-22 15:45:25.169  INFO 13400 --- [main] c.k.s.SpringBootAopTestApplication       : No active profile set, falling back to default profiles: default
+2022-12-22 15:45:25.917  INFO 13400 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-12-22 15:45:25.930  INFO 13400 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-22 15:45:25.931  INFO 13400 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-12-22 15:45:25.986  INFO 13400 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/chat]   : Initializing Spring embedded WebApplicationContext
+2022-12-22 15:45:25.986  INFO 13400 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 782 ms
+2022-12-22 15:45:26.414  INFO 13400 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path '/chat'
+2022-12-22 15:45:26.420  INFO 13400 --- [main] c.k.s.SpringBootAopTestApplication       : Started SpringBootAopTestApplication in 1.509 seconds (JVM running for 1.906)
+2022-12-22 15:45:36.693  INFO 13400 --- [http-nio-127.0.0.1-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/chat]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-22 15:45:36.693  INFO 13400 --- [http-nio-127.0.0.1-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-12-22 15:45:36.695  INFO 13400 --- [http-nio-127.0.0.1-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-12-22 15:45:36.710  INFO 13400 --- [http-nio-127.0.0.1-9090-exec-1] c.k.springbootaoptest.aop.ServiceAspect  : Before Signature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.sayHello() This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@5a7bed7f
+2022-12-22 15:45:36.722  INFO 13400 --- [http-nio-127.0.0.1-9090-exec-1] c.k.springbootaoptest.aop.ServiceAspect  : After Returning Signature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.sayHello() This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@5a7bed7f
+2022-12-22 15:45:36.722  INFO 13400 --- [http-nio-127.0.0.1-9090-exec-1] c.k.springbootaoptest.aop.ServiceAspect  : After Signature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.sayHello() This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@5a7bed7f
+2022-12-22 15:45:44.419  INFO 13400 --- [http-nio-127.0.0.1-9090-exec-2] c.k.springbootaoptest.aop.ServiceAspect  : Before Signature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.sayHello() This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@5a7bed7f
+2022-12-22 15:45:44.420  INFO 13400 --- [http-nio-127.0.0.1-9090-exec-2] c.k.springbootaoptest.aop.ServiceAspect  : After Returning Signature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.sayHello() This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@5a7bed7f
+2022-12-22 15:45:44.420  INFO 13400 --- [http-nio-127.0.0.1-9090-exec-2] c.k.springbootaoptest.aop.ServiceAspect  : After Signature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.sayHello() This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@5a7bed7f
+2022-12-22 15:46:08.800  INFO 14124 --- [main] c.k.s.SpringBootAopTestApplication       : Starting SpringBootAopTestApplication using Java 19 on DESKTOP-JRVLSME with PID 14124 (C:\Users\PREDATOR\Desktop\AOP\spring-boot-aop-test\target\classes started by PREDATOR in C:\Users\PREDATOR\Desktop\AOP\spring-boot-aop-test)
+2022-12-22 15:46:08.802  INFO 14124 --- [main] c.k.s.SpringBootAopTestApplication       : No active profile set, falling back to default profiles: default
+2022-12-22 15:46:09.484  INFO 14124 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-12-22 15:46:09.492  INFO 14124 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-22 15:46:09.492  INFO 14124 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-12-22 15:46:09.549  INFO 14124 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/chat]   : Initializing Spring embedded WebApplicationContext
+2022-12-22 15:46:09.549  INFO 14124 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 715 ms
+2022-12-22 15:46:09.968  INFO 14124 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path '/chat'
+2022-12-22 15:46:09.975  INFO 14124 --- [main] c.k.s.SpringBootAopTestApplication       : Started SpringBootAopTestApplication in 1.447 seconds (JVM running for 1.862)
+2022-12-22 15:46:15.960  INFO 14124 --- [http-nio-127.0.0.1-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/chat]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-22 15:46:15.960  INFO 14124 --- [http-nio-127.0.0.1-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-12-22 15:46:15.961  INFO 14124 --- [http-nio-127.0.0.1-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-12-22 15:46:15.977  INFO 14124 --- [http-nio-127.0.0.1-9090-exec-1] c.k.springbootaoptest.aop.ServiceAspect  : Before Signature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.sayHello() This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@7f96275
+2022-12-22 15:46:15.984  INFO 14124 --- [http-nio-127.0.0.1-9090-exec-1] c.k.springbootaoptest.aop.ServiceAspect  : After Returning Signature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.sayHello() This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@7f96275
+2022-12-22 15:46:15.984  INFO 14124 --- [http-nio-127.0.0.1-9090-exec-1] c.k.springbootaoptest.aop.ServiceAspect  : After Signature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.sayHello() This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@7f96275
+2022-12-22 15:46:52.534  INFO 14124 --- [http-nio-127.0.0.1-9090-exec-2] c.k.springbootaoptest.aop.ServiceAspect  : Before Signature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.checkMessage(String) This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@7f96275
+2022-12-22 15:46:52.535  INFO 14124 --- [http-nio-127.0.0.1-9090-exec-2] c.k.springbootaoptest.aop.ServiceAspect  : After Returning Signature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.checkMessage(String) This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@7f96275
+2022-12-22 15:46:52.535  INFO 14124 --- [http-nio-127.0.0.1-9090-exec-2] c.k.springbootaoptest.aop.ServiceAspect  : After Signature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.checkMessage(String) This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@7f96275
+2022-12-22 15:47:13.372  INFO 14124 --- [http-nio-127.0.0.1-9090-exec-3] c.k.springbootaoptest.aop.ServiceAspect  : Before Signature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.checkMessage(String) This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@7f96275
+2022-12-22 15:47:13.373  INFO 14124 --- [http-nio-127.0.0.1-9090-exec-3] c.k.springbootaoptest.aop.ServiceAspect  : After Returning Signature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.checkMessage(String) This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@7f96275
+2022-12-22 15:47:13.373  INFO 14124 --- [http-nio-127.0.0.1-9090-exec-3] c.k.springbootaoptest.aop.ServiceAspect  : After Signature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.checkMessage(String) This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@7f96275
+2022-12-22 15:47:23.217  INFO 14124 --- [http-nio-127.0.0.1-9090-exec-4] c.k.springbootaoptest.aop.ServiceAspect  : Before Signature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.checkMessage(String) This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@7f96275
+2022-12-22 15:47:23.217  INFO 14124 --- [http-nio-127.0.0.1-9090-exec-4] c.k.springbootaoptest.aop.ServiceAspect  : After Throwing Signature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.checkMessage(String) This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@7f96275
+2022-12-22 15:47:23.217  INFO 14124 --- [http-nio-127.0.0.1-9090-exec-4] c.k.springbootaoptest.aop.ServiceAspect  : After Signature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.checkMessage(String) This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@7f96275
+2022-12-22 15:47:23.222 ERROR 14124 --- [http-nio-127.0.0.1-9090-exec-4] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [/chat] threw exception [Request processing failed; nested exception is java.lang.IllegalArgumentException: Message is null] with root cause
+
+java.lang.IllegalArgumentException: Message is null
+	at com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.checkMessage(MessageServiceImpl.java:18) ~[classes/:na]
+	at com.kubilaycicek.springbootaoptest.service.MessageServiceImpl$$FastClassBySpringCGLIB$$fec28111.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:779) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:57) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.aspectj.AspectJAfterAdvice.invoke(AspectJAfterAdvice.java:49) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692) ~[spring-aop-5.3.9.jar:5.3.9]
+	at com.kubilaycicek.springbootaoptest.service.MessageServiceImpl$$EnhancerBySpringCGLIB$$89f9c61f.checkMessage(<generated>) ~[classes/:na]
+	at com.kubilaycicek.springbootaoptest.controller.MessageController.checkMessage(MessageController.java:23) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1064) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) ~[tomcat-embed-core-9.0.52.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.52.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+
+2022-12-22 15:49:22.088  INFO 9304 --- [main] c.k.s.SpringBootAopTestApplication       : Starting SpringBootAopTestApplication using Java 19 on DESKTOP-JRVLSME with PID 9304 (C:\Users\PREDATOR\Desktop\AOP\spring-boot-aop-test\target\classes started by PREDATOR in C:\Users\PREDATOR\Desktop\AOP\spring-boot-aop-test)
+2022-12-22 15:49:22.090  INFO 9304 --- [main] c.k.s.SpringBootAopTestApplication       : No active profile set, falling back to default profiles: default
+2022-12-22 15:49:22.846  INFO 9304 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-12-22 15:49:22.853  INFO 9304 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-22 15:49:22.853  INFO 9304 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-12-22 15:49:22.902  INFO 9304 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/chat]   : Initializing Spring embedded WebApplicationContext
+2022-12-22 15:49:22.902  INFO 9304 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 780 ms
+2022-12-22 15:49:23.343  INFO 9304 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path '/chat'
+2022-12-22 15:49:23.350  INFO 9304 --- [main] c.k.s.SpringBootAopTestApplication       : Started SpringBootAopTestApplication in 1.541 seconds (JVM running for 1.982)
+2022-12-22 15:49:26.325  INFO 9304 --- [http-nio-127.0.0.1-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/chat]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-22 15:49:26.326  INFO 9304 --- [http-nio-127.0.0.1-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-12-22 15:49:26.326  INFO 9304 --- [http-nio-127.0.0.1-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-12-22 15:49:26.343  INFO 9304 --- [http-nio-127.0.0.1-9090-exec-1] c.k.springbootaoptest.aop.ServiceAspect  : Before Signature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.sayHello() This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@10f3f603
+2022-12-22 15:49:26.350  INFO 9304 --- [http-nio-127.0.0.1-9090-exec-1] c.k.springbootaoptest.aop.ServiceAspect  : After Returning Signature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.sayHello() This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@10f3f603
+2022-12-22 15:49:26.351  INFO 9304 --- [http-nio-127.0.0.1-9090-exec-1] c.k.springbootaoptest.aop.ServiceAspect  : After Signature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.sayHello() This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@10f3f603
+2022-12-22 15:49:37.628  INFO 12788 --- [main] c.k.s.SpringBootAopTestApplication       : Starting SpringBootAopTestApplication using Java 19 on DESKTOP-JRVLSME with PID 12788 (C:\Users\PREDATOR\Desktop\AOP\spring-boot-aop-test\target\classes started by PREDATOR in C:\Users\PREDATOR\Desktop\AOP\spring-boot-aop-test)
+2022-12-22 15:49:37.630  INFO 12788 --- [main] c.k.s.SpringBootAopTestApplication       : No active profile set, falling back to default profiles: default
+2022-12-22 15:49:38.460  INFO 12788 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-12-22 15:49:38.466  INFO 12788 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-22 15:49:38.467  INFO 12788 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-12-22 15:49:38.518  INFO 12788 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/chat]   : Initializing Spring embedded WebApplicationContext
+2022-12-22 15:49:38.519  INFO 12788 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 852 ms
+2022-12-22 15:49:39.006  INFO 12788 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path '/chat'
+2022-12-22 15:49:39.014  INFO 12788 --- [main] c.k.s.SpringBootAopTestApplication       : Started SpringBootAopTestApplication in 1.696 seconds (JVM running for 2.563)
+2022-12-22 15:49:41.291  INFO 12788 --- [http-nio-127.0.0.1-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/chat]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-22 15:49:41.292  INFO 12788 --- [http-nio-127.0.0.1-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-12-22 15:49:41.292  INFO 12788 --- [http-nio-127.0.0.1-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-12-22 15:50:31.611  INFO 12788 --- [http-nio-127.0.0.1-9090-exec-1] c.k.springbootaoptest.aop.ServiceAspect  : Before Signature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.sayHello() This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@3d6459ad
+2022-12-22 15:50:32.925  INFO 12788 --- [http-nio-127.0.0.1-9090-exec-1] c.k.springbootaoptest.aop.ServiceAspect  : After Returning Signature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.sayHello() This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@3d6459ad
+2022-12-22 15:50:32.926  INFO 12788 --- [http-nio-127.0.0.1-9090-exec-1] c.k.springbootaoptest.aop.ServiceAspect  : After Signature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.sayHello() This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@3d6459ad
+2022-12-22 15:51:07.621  INFO 12788 --- [http-nio-127.0.0.1-9090-exec-2] c.k.springbootaoptest.aop.ServiceAspect  : Before Signature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.checkMessage(String) This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@3d6459ad
+2022-12-22 15:51:07.622  INFO 12788 --- [http-nio-127.0.0.1-9090-exec-2] c.k.springbootaoptest.aop.ServiceAspect  : After Returning Signature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.checkMessage(String) This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@3d6459ad
+2022-12-22 15:51:07.622  INFO 12788 --- [http-nio-127.0.0.1-9090-exec-2] c.k.springbootaoptest.aop.ServiceAspect  : After Signature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.checkMessage(String) This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@3d6459ad
+2022-12-22 16:08:55.344  INFO 12228 --- [main] c.k.s.SpringBootAopTestApplication       : Starting SpringBootAopTestApplication using Java 19 on DESKTOP-JRVLSME with PID 12228 (C:\Users\PREDATOR\Desktop\AOP\spring-boot-aop-test\target\classes started by PREDATOR in C:\Users\PREDATOR\Desktop\AOP\spring-boot-aop-test)
+2022-12-22 16:08:55.346  INFO 12228 --- [main] c.k.s.SpringBootAopTestApplication       : No active profile set, falling back to default profiles: default
+2022-12-22 16:08:56.136  INFO 12228 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-12-22 16:08:56.143  INFO 12228 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-22 16:08:56.144  INFO 12228 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-12-22 16:08:56.198  INFO 12228 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/chat]   : Initializing Spring embedded WebApplicationContext
+2022-12-22 16:08:56.198  INFO 12228 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 819 ms
+2022-12-22 16:08:56.679  INFO 12228 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path '/chat'
+2022-12-22 16:08:56.686  INFO 12228 --- [main] c.k.s.SpringBootAopTestApplication       : Started SpringBootAopTestApplication in 1.647 seconds (JVM running for 2.263)
+2022-12-22 16:09:08.342  INFO 12228 --- [http-nio-127.0.0.1-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/chat]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-22 16:09:08.342  INFO 12228 --- [http-nio-127.0.0.1-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-12-22 16:09:08.343  INFO 12228 --- [http-nio-127.0.0.1-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-12-22 16:10:31.706  INFO 12228 --- [http-nio-127.0.0.1-9090-exec-1] c.k.springbootaoptest.aop.ServiceAspect  : Before Signature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.getMessage() This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@101a6161
+2022-12-22 16:10:42.192  INFO 12228 --- [http-nio-127.0.0.1-9090-exec-1] c.k.springbootaoptest.aop.ServiceAspect  : After Returning Signature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.getMessage() This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@101a6161
+2022-12-22 16:10:49.920  INFO 12228 --- [http-nio-127.0.0.1-9090-exec-1] c.k.springbootaoptest.aop.ServiceAspect  : After Signature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.getMessage() This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@101a6161
+2022-12-22 16:12:08.514  INFO 12228 --- [http-nio-127.0.0.1-9090-exec-2] c.k.springbootaoptest.aop.ServiceAspect  : Before Signature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.getMessage() This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@101a6161
+2022-12-22 16:12:09.395  INFO 12228 --- [http-nio-127.0.0.1-9090-exec-2] c.k.springbootaoptest.aop.ServiceAspect  : After Returning Signature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.getMessage() This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@101a6161
+2022-12-22 16:12:09.978  INFO 12228 --- [http-nio-127.0.0.1-9090-exec-2] c.k.springbootaoptest.aop.ServiceAspect  : After Signature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.getMessage() This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@101a6161
+2022-12-22 16:12:22.619  INFO 12228 --- [http-nio-127.0.0.1-9090-exec-3] c.k.springbootaoptest.aop.ServiceAspect  : Before Signature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.checkMessage(String) This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@101a6161
+2022-12-22 16:12:23.147  INFO 12228 --- [http-nio-127.0.0.1-9090-exec-3] c.k.springbootaoptest.aop.ServiceAspect  : After Returning Signature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.checkMessage(String) This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@101a6161
+2022-12-22 16:12:23.459  INFO 12228 --- [http-nio-127.0.0.1-9090-exec-3] c.k.springbootaoptest.aop.ServiceAspect  : After Signature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.checkMessage(String) This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@101a6161
+2022-12-22 20:40:24.707  INFO 5276 --- [main] c.k.s.SpringBootAopTestApplication       : Starting SpringBootAopTestApplication using Java 19 on DESKTOP-JRVLSME with PID 5276 (C:\Users\PREDATOR\Desktop\AOP\spring-boot-aop-test\target\classes started by PREDATOR in C:\Users\PREDATOR\Desktop\AOP\spring-boot-aop-test)
+2022-12-22 20:40:24.709  INFO 5276 --- [main] c.k.s.SpringBootAopTestApplication       : No active profile set, falling back to default profiles: default
+2022-12-22 20:40:25.567  INFO 5276 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-12-22 20:40:25.575  INFO 5276 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-22 20:40:25.575  INFO 5276 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-12-22 20:40:25.627  INFO 5276 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/chat]   : Initializing Spring embedded WebApplicationContext
+2022-12-22 20:40:25.627  INFO 5276 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 881 ms
+2022-12-22 20:40:26.044  INFO 5276 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path '/chat'
+2022-12-22 20:40:26.051  INFO 5276 --- [main] c.k.s.SpringBootAopTestApplication       : Started SpringBootAopTestApplication in 1.667 seconds (JVM running for 2.172)
+2022-12-22 20:40:30.507  INFO 5276 --- [http-nio-127.0.0.1-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/chat]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-22 20:40:30.507  INFO 5276 --- [http-nio-127.0.0.1-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-12-22 20:40:30.508  INFO 5276 --- [http-nio-127.0.0.1-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-12-22 20:40:30.523  INFO 5276 --- [http-nio-127.0.0.1-9090-exec-1] c.k.springbootaoptest.aop.ServiceAspect  : Before Signature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.getMessage() This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@4e2b91a7
+2022-12-22 20:40:30.532  INFO 5276 --- [http-nio-127.0.0.1-9090-exec-1] c.k.springbootaoptest.aop.ServiceAspect  : After Returning Signature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.getMessage() This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@4e2b91a7
+2022-12-22 20:40:30.532  INFO 5276 --- [http-nio-127.0.0.1-9090-exec-1] c.k.springbootaoptest.aop.ServiceAspect  : After Signature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.getMessage() This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@4e2b91a7
+2022-12-22 20:57:53.906  INFO 20396 --- [main] c.k.s.SpringBootAopTestApplication       : Starting SpringBootAopTestApplication using Java 19 on DESKTOP-JRVLSME with PID 20396 (C:\Users\PREDATOR\Desktop\AOP\spring-boot-aop-test\target\classes started by PREDATOR in C:\Users\PREDATOR\Desktop\AOP\spring-boot-aop-test)
+2022-12-22 20:57:53.908  INFO 20396 --- [main] c.k.s.SpringBootAopTestApplication       : No active profile set, falling back to default profiles: default
+2022-12-22 20:57:54.667  INFO 20396 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-12-22 20:57:54.675  INFO 20396 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-22 20:57:54.675  INFO 20396 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-12-22 20:57:54.725  INFO 20396 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/chat]   : Initializing Spring embedded WebApplicationContext
+2022-12-22 20:57:54.725  INFO 20396 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 783 ms
+2022-12-22 20:57:55.156  INFO 20396 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path '/chat'
+2022-12-22 20:57:55.165  INFO 20396 --- [main] c.k.s.SpringBootAopTestApplication       : Started SpringBootAopTestApplication in 1.542 seconds (JVM running for 2.414)
+2022-12-22 20:57:58.346  INFO 20396 --- [http-nio-127.0.0.1-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/chat]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-22 20:57:58.346  INFO 20396 --- [http-nio-127.0.0.1-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-12-22 20:57:58.347  INFO 20396 --- [http-nio-127.0.0.1-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-12-22 20:59:21.539  INFO 20396 --- [http-nio-127.0.0.1-9090-exec-1] c.k.springbootaoptest.aop.ServiceAspect  : Before Aspect Signature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.getMessage() This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@24550d12
+2022-12-22 20:59:24.231  INFO 20396 --- [http-nio-127.0.0.1-9090-exec-1] c.k.springbootaoptest.aop.ServiceAspect  : After Returning  AspectSignature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.getMessage() This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@24550d12
+2022-12-22 20:59:26.778  INFO 20396 --- [http-nio-127.0.0.1-9090-exec-1] c.k.springbootaoptest.aop.ServiceAspect  : After AspectSignature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.getMessage() This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@24550d12
+2022-12-22 20:59:58.664  INFO 20396 --- [http-nio-127.0.0.1-9090-exec-2] c.k.springbootaoptest.aop.ServiceAspect  : Before Aspect Signature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.checkMessage(String) This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@24550d12
+2022-12-22 20:59:59.640  INFO 20396 --- [http-nio-127.0.0.1-9090-exec-2] c.k.springbootaoptest.aop.ServiceAspect  : After Returning  AspectSignature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.checkMessage(String) This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@24550d12
+2022-12-22 21:00:00.352  INFO 20396 --- [http-nio-127.0.0.1-9090-exec-2] c.k.springbootaoptest.aop.ServiceAspect  : After AspectSignature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.checkMessage(String) This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@24550d12
+2022-12-22 21:00:22.949  INFO 9204 --- [main] c.k.s.SpringBootAopTestApplication       : Starting SpringBootAopTestApplication using Java 19 on DESKTOP-JRVLSME with PID 9204 (C:\Users\PREDATOR\Desktop\AOP\spring-boot-aop-test\target\classes started by PREDATOR in C:\Users\PREDATOR\Desktop\AOP\spring-boot-aop-test)
+2022-12-22 21:00:22.952  INFO 9204 --- [main] c.k.s.SpringBootAopTestApplication       : No active profile set, falling back to default profiles: default
+2022-12-22 21:00:23.718  INFO 9204 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-12-22 21:00:23.726  INFO 9204 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-22 21:00:23.726  INFO 9204 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-12-22 21:00:23.778  INFO 9204 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/chat]   : Initializing Spring embedded WebApplicationContext
+2022-12-22 21:00:23.779  INFO 9204 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 795 ms
+2022-12-22 21:00:24.242  INFO 9204 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path '/chat'
+2022-12-22 21:00:24.249  INFO 9204 --- [main] c.k.s.SpringBootAopTestApplication       : Started SpringBootAopTestApplication in 1.599 seconds (JVM running for 2.129)
+2022-12-22 21:00:26.239  INFO 9204 --- [http-nio-127.0.0.1-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/chat]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-22 21:00:26.239  INFO 9204 --- [http-nio-127.0.0.1-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-12-22 21:00:26.240  INFO 9204 --- [http-nio-127.0.0.1-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-12-22 21:00:28.922  INFO 9204 --- [http-nio-127.0.0.1-9090-exec-1] c.k.springbootaoptest.aop.ServiceAspect  : Before Aspect Signature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.checkMessage(String) This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@27cec7f7
+2022-12-22 21:00:38.192  INFO 9204 --- [http-nio-127.0.0.1-9090-exec-1] c.k.springbootaoptest.aop.ServiceAspect  : After Throwing Aspect Signature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.checkMessage(String) This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@27cec7f7
+2022-12-22 21:00:38.193  INFO 9204 --- [http-nio-127.0.0.1-9090-exec-1] c.k.springbootaoptest.aop.ServiceAspect  : After AspectSignature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.checkMessage(String) This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@27cec7f7
+2022-12-22 21:00:38.200 ERROR 9204 --- [http-nio-127.0.0.1-9090-exec-1] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [/chat] threw exception [Request processing failed; nested exception is java.lang.IllegalArgumentException: Message is null] with root cause
+
+java.lang.IllegalArgumentException: Message is null
+	at com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.checkMessage(MessageServiceImpl.java:13) ~[classes/:na]
+	at com.kubilaycicek.springbootaoptest.service.MessageServiceImpl$$FastClassBySpringCGLIB$$fec28111.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:779) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:57) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.aspectj.AspectJAfterAdvice.invoke(AspectJAfterAdvice.java:49) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692) ~[spring-aop-5.3.9.jar:5.3.9]
+	at com.kubilaycicek.springbootaoptest.service.MessageServiceImpl$$EnhancerBySpringCGLIB$$17e18e8f.checkMessage(<generated>) ~[classes/:na]
+	at com.kubilaycicek.springbootaoptest.controller.MessageController.checkMessage(MessageController.java:23) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1064) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) ~[tomcat-embed-core-9.0.52.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.52.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+
+2022-12-22 21:00:53.710  INFO 5252 --- [main] c.k.s.SpringBootAopTestApplication       : Starting SpringBootAopTestApplication using Java 19 on DESKTOP-JRVLSME with PID 5252 (C:\Users\PREDATOR\Desktop\AOP\spring-boot-aop-test\target\classes started by PREDATOR in C:\Users\PREDATOR\Desktop\AOP\spring-boot-aop-test)
+2022-12-22 21:00:53.712  INFO 5252 --- [main] c.k.s.SpringBootAopTestApplication       : No active profile set, falling back to default profiles: default
+2022-12-22 21:00:54.521  INFO 5252 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-12-22 21:00:54.529  INFO 5252 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-22 21:00:54.529  INFO 5252 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-12-22 21:00:54.579  INFO 5252 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/chat]   : Initializing Spring embedded WebApplicationContext
+2022-12-22 21:00:54.579  INFO 5252 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 826 ms
+2022-12-22 21:00:55.022  INFO 5252 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path '/chat'
+2022-12-22 21:00:55.029  INFO 5252 --- [main] c.k.s.SpringBootAopTestApplication       : Started SpringBootAopTestApplication in 1.635 seconds (JVM running for 2.153)
+2022-12-22 21:01:01.937  INFO 5252 --- [http-nio-127.0.0.1-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/chat]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-22 21:01:01.937  INFO 5252 --- [http-nio-127.0.0.1-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-12-22 21:01:01.938  INFO 5252 --- [http-nio-127.0.0.1-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-12-22 21:01:05.657  INFO 5252 --- [http-nio-127.0.0.1-9090-exec-1] c.k.springbootaoptest.aop.ServiceAspect  : Before Aspect Signature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.sayHello() This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@40178422
+2022-12-22 21:01:13.123  INFO 5252 --- [http-nio-127.0.0.1-9090-exec-1] c.k.springbootaoptest.aop.ServiceAspect  : After Returning  Aspect Signature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.sayHello() This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@40178422
+2022-12-22 21:01:14.145  INFO 5252 --- [http-nio-127.0.0.1-9090-exec-1] c.k.springbootaoptest.aop.ServiceAspect  : After AspectSignature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.sayHello() This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@40178422
+2022-12-22 21:01:43.649  INFO 5252 --- [http-nio-127.0.0.1-9090-exec-2] c.k.springbootaoptest.aop.ServiceAspect  : Before Aspect Signature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.sayHello() This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@40178422
+2022-12-22 21:02:29.355  INFO 5252 --- [http-nio-127.0.0.1-9090-exec-2] c.k.springbootaoptest.aop.ServiceAspect  : After Returning  Aspect Signature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.sayHello() This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@40178422
+2022-12-22 21:02:29.893  INFO 5252 --- [http-nio-127.0.0.1-9090-exec-2] c.k.springbootaoptest.aop.ServiceAspect  : After AspectSignature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.sayHello() This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@40178422
+2022-12-22 21:07:14.457  INFO 6568 --- [main] c.k.s.SpringBootAopTestApplication       : Starting SpringBootAopTestApplication using Java 19 on DESKTOP-JRVLSME with PID 6568 (C:\Users\PREDATOR\Desktop\AOP\spring-boot-aop-test\target\classes started by PREDATOR in C:\Users\PREDATOR\Desktop\AOP\spring-boot-aop-test)
+2022-12-22 21:07:14.460  INFO 6568 --- [main] c.k.s.SpringBootAopTestApplication       : No active profile set, falling back to default profiles: default
+2022-12-22 21:07:14.925  WARN 6568 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatServletWebServerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryConfiguration$EmbeddedTomcat.class]: BeanPostProcessor before instantiation of bean failed; nested exception is java.lang.IllegalArgumentException: ProceedingJoinPoint is only supported for around advice
+2022-12-22 21:07:14.931  INFO 6568 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-12-22 21:07:14.947 ERROR 6568 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatServletWebServerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryConfiguration$EmbeddedTomcat.class]: BeanPostProcessor before instantiation of bean failed; nested exception is java.lang.IllegalArgumentException: ProceedingJoinPoint is only supported for around advice
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:163) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:577) ~[spring-context-5.3.9.jar:5.3.9]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332) ~[spring-boot-2.5.4.jar:2.5.4]
+	at com.kubilaycicek.springbootaoptest.SpringBootAopTestApplication.main(SpringBootAopTestApplication.java:12) ~[classes/:na]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatServletWebServerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryConfiguration$EmbeddedTomcat.class]: BeanPostProcessor before instantiation of bean failed; nested exception is java.lang.IllegalArgumentException: ProceedingJoinPoint is only supported for around advice
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:519) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getWebServerFactory(ServletWebServerApplicationContext.java:217) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:180) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:160) ~[spring-boot-2.5.4.jar:2.5.4]
+	... 8 common frames omitted
+Caused by: java.lang.IllegalArgumentException: ProceedingJoinPoint is only supported for around advice
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.maybeBindProceedingJoinPoint(AbstractAspectJAdvice.java:405) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.calculateArgumentBindings(AbstractAspectJAdvice.java:379) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.aspectj.annotation.ReflectiveAspectJAdvisorFactory.getAdvice(ReflectiveAspectJAdvisorFactory.java:309) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.aspectj.annotation.InstantiationModelAwarePointcutAdvisorImpl.instantiateAdvice(InstantiationModelAwarePointcutAdvisorImpl.java:149) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.aspectj.annotation.InstantiationModelAwarePointcutAdvisorImpl.<init>(InstantiationModelAwarePointcutAdvisorImpl.java:113) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.aspectj.annotation.ReflectiveAspectJAdvisorFactory.getAdvisor(ReflectiveAspectJAdvisorFactory.java:213) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.aspectj.annotation.ReflectiveAspectJAdvisorFactory.getAdvisors(ReflectiveAspectJAdvisorFactory.java:144) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.aspectj.annotation.BeanFactoryAspectJAdvisorsBuilder.buildAspectJAdvisors(BeanFactoryAspectJAdvisorsBuilder.java:110) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:95) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:101) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:253) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1142) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1117) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:513) ~[spring-beans-5.3.9.jar:5.3.9]
+	... 15 common frames omitted
+
+2022-12-22 21:08:28.260  INFO 12808 --- [main] c.k.s.SpringBootAopTestApplication       : Starting SpringBootAopTestApplication using Java 19 on DESKTOP-JRVLSME with PID 12808 (C:\Users\PREDATOR\Desktop\AOP\spring-boot-aop-test\target\classes started by PREDATOR in C:\Users\PREDATOR\Desktop\AOP\spring-boot-aop-test)
+2022-12-22 21:08:28.262  INFO 12808 --- [main] c.k.s.SpringBootAopTestApplication       : No active profile set, falling back to default profiles: default
+2022-12-22 21:08:29.013  INFO 12808 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-12-22 21:08:29.020  INFO 12808 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-22 21:08:29.021  INFO 12808 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-12-22 21:08:29.072  INFO 12808 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/chat]   : Initializing Spring embedded WebApplicationContext
+2022-12-22 21:08:29.072  INFO 12808 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 777 ms
+2022-12-22 21:08:29.509  INFO 12808 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path '/chat'
+2022-12-22 21:08:29.516  INFO 12808 --- [main] c.k.s.SpringBootAopTestApplication       : Started SpringBootAopTestApplication in 1.549 seconds (JVM running for 2.114)
+2022-12-22 21:08:39.522  INFO 12808 --- [http-nio-127.0.0.1-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/chat]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-22 21:08:39.523  INFO 12808 --- [http-nio-127.0.0.1-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-12-22 21:08:39.524  INFO 12808 --- [http-nio-127.0.0.1-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-12-22 21:08:41.148  INFO 12808 --- [http-nio-127.0.0.1-9090-exec-1] c.k.springbootaoptest.aop.ServiceAspect  : Before Aspect Signature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.getMessage() This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@54c85c2e
+2022-12-22 21:08:42.067  INFO 12808 --- [http-nio-127.0.0.1-9090-exec-1] c.k.springbootaoptest.aop.ServiceAspect  : After Returning  Aspect Signature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.getMessage() This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@54c85c2e
+2022-12-22 21:08:42.605  INFO 12808 --- [http-nio-127.0.0.1-9090-exec-1] c.k.springbootaoptest.aop.ServiceAspect  : After AspectSignature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.getMessage() This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@54c85c2e
+2022-12-22 21:10:53.589  INFO 7064 --- [main] c.k.s.SpringBootAopTestApplication       : Starting SpringBootAopTestApplication using Java 19 on DESKTOP-JRVLSME with PID 7064 (C:\Users\PREDATOR\Desktop\AOP\spring-boot-aop-test\target\classes started by PREDATOR in C:\Users\PREDATOR\Desktop\AOP\spring-boot-aop-test)
+2022-12-22 21:10:53.591  INFO 7064 --- [main] c.k.s.SpringBootAopTestApplication       : No active profile set, falling back to default profiles: default
+2022-12-22 21:10:54.291  INFO 7064 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-12-22 21:10:54.356  INFO 7064 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 732 ms
+2022-12-22 21:10:54.754  INFO 7064 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path '/chat'
+2022-12-22 21:10:54.760  INFO 7064 --- [main] c.k.s.SpringBootAopTestApplication       : Started SpringBootAopTestApplication in 1.423 seconds (JVM running for 1.818)
+2022-12-22 21:10:56.796  INFO 9960 --- [main] c.k.s.SpringBootAopTestApplication       : Starting SpringBootAopTestApplication using Java 19 on DESKTOP-JRVLSME with PID 9960 (C:\Users\PREDATOR\Desktop\AOP\spring-boot-aop-test\target\classes started by PREDATOR in C:\Users\PREDATOR\Desktop\AOP\spring-boot-aop-test)
+2022-12-22 21:10:56.798  INFO 9960 --- [main] c.k.s.SpringBootAopTestApplication       : No active profile set, falling back to default profiles: default
+2022-12-22 21:10:57.601  INFO 9960 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-12-22 21:10:57.609  INFO 9960 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-22 21:10:57.609  INFO 9960 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-12-22 21:10:57.665  INFO 9960 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/chat]   : Initializing Spring embedded WebApplicationContext
+2022-12-22 21:10:57.665  INFO 9960 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 832 ms
+2022-12-22 21:10:58.124  INFO 9960 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path '/chat'
+2022-12-22 21:10:58.133  INFO 9960 --- [main] c.k.s.SpringBootAopTestApplication       : Started SpringBootAopTestApplication in 1.647 seconds (JVM running for 2.162)
+2022-12-22 21:11:04.128  INFO 9960 --- [http-nio-127.0.0.1-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/chat]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-22 21:11:04.128  INFO 9960 --- [http-nio-127.0.0.1-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-12-22 21:11:04.129  INFO 9960 --- [http-nio-127.0.0.1-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-12-22 21:11:09.845  INFO 9960 --- [http-nio-127.0.0.1-9090-exec-1] c.k.springbootaoptest.aop.ServiceAspect  : Before Aspect Signature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.sayHello() This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@2aa5da5a
+2022-12-22 21:11:13.242  INFO 9960 --- [http-nio-127.0.0.1-9090-exec-1] c.k.springbootaoptest.aop.ServiceAspect  : After Returning  Aspect Signature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.sayHello() This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@2aa5da5a
+2022-12-22 21:11:13.633  INFO 9960 --- [http-nio-127.0.0.1-9090-exec-1] c.k.springbootaoptest.aop.ServiceAspect  : After AspectSignature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.sayHello() This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@2aa5da5a
+2022-12-22 21:11:13.643  INFO 9960 --- [http-nio-127.0.0.1-9090-exec-1] c.k.springbootaoptest.aop.ServiceAspect  : StopWatch 'MessageController->sayHello': running time = 5719523600 ns
+---------------------------------------------
+ns         %     Task name
+---------------------------------------------
+5719523600  %100  sayHello
+
+2022-12-22 21:12:01.976  INFO 9960 --- [http-nio-127.0.0.1-9090-exec-2] c.k.springbootaoptest.aop.ServiceAspect  : Before Aspect Signature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.getMessage() This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@2aa5da5a
+2022-12-22 21:12:02.626  INFO 9960 --- [http-nio-127.0.0.1-9090-exec-2] c.k.springbootaoptest.aop.ServiceAspect  : After Returning  Aspect Signature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.getMessage() This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@2aa5da5a
+2022-12-22 21:12:03.129  INFO 9960 --- [http-nio-127.0.0.1-9090-exec-2] c.k.springbootaoptest.aop.ServiceAspect  : After AspectSignature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.getMessage() This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@2aa5da5a
+2022-12-22 21:12:21.714  INFO 9960 --- [http-nio-127.0.0.1-9090-exec-3] c.k.springbootaoptest.aop.ServiceAspect  : Before Aspect Signature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.checkMessage(String) This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@2aa5da5a
+2022-12-22 21:12:22.081  INFO 9960 --- [http-nio-127.0.0.1-9090-exec-3] c.k.springbootaoptest.aop.ServiceAspect  : After Returning  Aspect Signature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.checkMessage(String) This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@2aa5da5a
+2022-12-22 21:12:22.434  INFO 9960 --- [http-nio-127.0.0.1-9090-exec-3] c.k.springbootaoptest.aop.ServiceAspect  : After AspectSignature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.checkMessage(String) This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@2aa5da5a
+2022-12-22 21:12:54.515  INFO 10620 --- [main] c.k.s.SpringBootAopTestApplication       : Starting SpringBootAopTestApplication using Java 19 on DESKTOP-JRVLSME with PID 10620 (C:\Users\PREDATOR\Desktop\AOP\spring-boot-aop-test\target\classes started by PREDATOR in C:\Users\PREDATOR\Desktop\AOP\spring-boot-aop-test)
+2022-12-22 21:12:54.521  INFO 10620 --- [main] c.k.s.SpringBootAopTestApplication       : No active profile set, falling back to default profiles: default
+2022-12-22 21:12:55.276  INFO 10620 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-12-22 21:12:55.283  INFO 10620 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-22 21:12:55.284  INFO 10620 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-12-22 21:12:55.334  INFO 10620 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/chat]   : Initializing Spring embedded WebApplicationContext
+2022-12-22 21:12:55.335  INFO 10620 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 779 ms
+2022-12-22 21:12:55.768  INFO 10620 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path '/chat'
+2022-12-22 21:12:55.775  INFO 10620 --- [main] c.k.s.SpringBootAopTestApplication       : Started SpringBootAopTestApplication in 1.567 seconds (JVM running for 2.152)
+2022-12-22 21:12:58.265  INFO 10620 --- [http-nio-127.0.0.1-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/chat]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-22 21:12:58.266  INFO 10620 --- [http-nio-127.0.0.1-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-12-22 21:12:58.266  INFO 10620 --- [http-nio-127.0.0.1-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-12-22 21:13:00.434  INFO 10620 --- [http-nio-127.0.0.1-9090-exec-1] c.k.springbootaoptest.aop.ServiceAspect  : Before Aspect Signature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.checkMessage(String) This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@50e8b7fc
+2022-12-22 21:13:01.014  INFO 10620 --- [http-nio-127.0.0.1-9090-exec-1] c.k.springbootaoptest.aop.ServiceAspect  : After Returning  Aspect Signature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.checkMessage(String) This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@50e8b7fc
+2022-12-22 21:13:02.410  INFO 10620 --- [http-nio-127.0.0.1-9090-exec-1] c.k.springbootaoptest.aop.ServiceAspect  : After AspectSignature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.checkMessage(String) This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@50e8b7fc
+2022-12-22 21:13:02.410  INFO 10620 --- [http-nio-127.0.0.1-9090-exec-1] c.k.springbootaoptest.aop.ServiceAspect  : =====================================================================================
+2022-12-22 21:13:23.496  INFO 11680 --- [main] c.k.s.SpringBootAopTestApplication       : Starting SpringBootAopTestApplication using Java 19 on DESKTOP-JRVLSME with PID 11680 (C:\Users\PREDATOR\Desktop\AOP\spring-boot-aop-test\target\classes started by PREDATOR in C:\Users\PREDATOR\Desktop\AOP\spring-boot-aop-test)
+2022-12-22 21:13:23.498  INFO 11680 --- [main] c.k.s.SpringBootAopTestApplication       : No active profile set, falling back to default profiles: default
+2022-12-22 21:13:24.237  INFO 11680 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-12-22 21:13:24.244  INFO 11680 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-22 21:13:24.244  INFO 11680 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-12-22 21:13:24.295  INFO 11680 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/chat]   : Initializing Spring embedded WebApplicationContext
+2022-12-22 21:13:24.295  INFO 11680 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 764 ms
+2022-12-22 21:13:24.734  INFO 11680 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path '/chat'
+2022-12-22 21:13:24.741  INFO 11680 --- [main] c.k.s.SpringBootAopTestApplication       : Started SpringBootAopTestApplication in 1.529 seconds (JVM running for 2.029)
+2022-12-22 21:13:26.768  INFO 11680 --- [http-nio-127.0.0.1-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/chat]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-22 21:13:26.768  INFO 11680 --- [http-nio-127.0.0.1-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-12-22 21:13:26.769  INFO 11680 --- [http-nio-127.0.0.1-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-12-22 21:13:28.796  INFO 11680 --- [http-nio-127.0.0.1-9090-exec-1] c.k.springbootaoptest.aop.ServiceAspect  : Before Aspect Signature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.checkMessage(String) This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@57dc89af
+2022-12-22 21:13:28.797  INFO 11680 --- [http-nio-127.0.0.1-9090-exec-1] c.k.springbootaoptest.aop.ServiceAspect  : =====================================================================================
+2022-12-22 21:13:29.331  INFO 11680 --- [http-nio-127.0.0.1-9090-exec-1] c.k.springbootaoptest.aop.ServiceAspect  : After Returning  Aspect Signature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.checkMessage(String) This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@57dc89af
+2022-12-22 21:13:29.331  INFO 11680 --- [http-nio-127.0.0.1-9090-exec-1] c.k.springbootaoptest.aop.ServiceAspect  : =====================================================================================
+2022-12-22 21:13:29.852  INFO 11680 --- [http-nio-127.0.0.1-9090-exec-1] c.k.springbootaoptest.aop.ServiceAspect  : After AspectSignature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.checkMessage(String) This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@57dc89af
+2022-12-22 21:13:29.852  INFO 11680 --- [http-nio-127.0.0.1-9090-exec-1] c.k.springbootaoptest.aop.ServiceAspect  : =====================================================================================
+2022-12-22 21:13:37.795  INFO 11680 --- [http-nio-127.0.0.1-9090-exec-2] c.k.springbootaoptest.aop.ServiceAspect  : Before Aspect Signature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.getMessage() This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@57dc89af
+2022-12-22 21:13:37.795  INFO 11680 --- [http-nio-127.0.0.1-9090-exec-2] c.k.springbootaoptest.aop.ServiceAspect  : =====================================================================================
+2022-12-22 21:13:38.220  INFO 11680 --- [http-nio-127.0.0.1-9090-exec-2] c.k.springbootaoptest.aop.ServiceAspect  : After Returning  Aspect Signature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.getMessage() This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@57dc89af
+2022-12-22 21:13:38.220  INFO 11680 --- [http-nio-127.0.0.1-9090-exec-2] c.k.springbootaoptest.aop.ServiceAspect  : =====================================================================================
+2022-12-22 21:13:38.628  INFO 11680 --- [http-nio-127.0.0.1-9090-exec-2] c.k.springbootaoptest.aop.ServiceAspect  : After AspectSignature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.getMessage() This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@57dc89af
+2022-12-22 21:13:38.628  INFO 11680 --- [http-nio-127.0.0.1-9090-exec-2] c.k.springbootaoptest.aop.ServiceAspect  : =====================================================================================
+2022-12-22 21:13:50.796  INFO 11680 --- [http-nio-127.0.0.1-9090-exec-3] c.k.springbootaoptest.aop.ServiceAspect  : Before Aspect Signature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.checkMessage(String) This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@57dc89af
+2022-12-22 21:13:50.796  INFO 11680 --- [http-nio-127.0.0.1-9090-exec-3] c.k.springbootaoptest.aop.ServiceAspect  : =====================================================================================
+2022-12-22 21:13:51.450  WARN 11680 --- [http-nio-127.0.0.1-9090-exec-3] c.k.springbootaoptest.aop.ServiceAspect  : After Throwing Aspect Signature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.checkMessage(String) This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@57dc89af
+2022-12-22 21:13:51.451  INFO 11680 --- [http-nio-127.0.0.1-9090-exec-3] c.k.springbootaoptest.aop.ServiceAspect  : =====================================================================================
+2022-12-22 21:13:51.970  INFO 11680 --- [http-nio-127.0.0.1-9090-exec-3] c.k.springbootaoptest.aop.ServiceAspect  : After AspectSignature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.checkMessage(String) This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@57dc89af
+2022-12-22 21:13:51.970  INFO 11680 --- [http-nio-127.0.0.1-9090-exec-3] c.k.springbootaoptest.aop.ServiceAspect  : =====================================================================================
+2022-12-22 21:13:51.977 ERROR 11680 --- [http-nio-127.0.0.1-9090-exec-3] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [/chat] threw exception [Request processing failed; nested exception is java.lang.IllegalArgumentException: Message is null] with root cause
+
+java.lang.IllegalArgumentException: Message is null
+	at com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.checkMessage(MessageServiceImpl.java:13) ~[classes/:na]
+	at com.kubilaycicek.springbootaoptest.service.MessageServiceImpl$$FastClassBySpringCGLIB$$fec28111.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:779) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:57) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.aspectj.AspectJAfterAdvice.invoke(AspectJAfterAdvice.java:49) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692) ~[spring-aop-5.3.9.jar:5.3.9]
+	at com.kubilaycicek.springbootaoptest.service.MessageServiceImpl$$EnhancerBySpringCGLIB$$d9af0d8a.checkMessage(<generated>) ~[classes/:na]
+	at com.kubilaycicek.springbootaoptest.controller.MessageController.checkMessage(MessageController.java:24) ~[classes/:na]
+	at com.kubilaycicek.springbootaoptest.controller.MessageController$$FastClassBySpringCGLIB$$4b057bb.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:779) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692) ~[spring-aop-5.3.9.jar:5.3.9]
+	at com.kubilaycicek.springbootaoptest.controller.MessageController$$EnhancerBySpringCGLIB$$7da827e0.checkMessage(<generated>) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1064) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) ~[tomcat-embed-core-9.0.52.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.52.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+
+2022-12-22 21:14:43.590  INFO 11680 --- [http-nio-127.0.0.1-9090-exec-4] c.k.springbootaoptest.aop.ServiceAspect  : Before Aspect Signature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.sayHello() This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@57dc89af
+2022-12-22 21:14:43.591  INFO 11680 --- [http-nio-127.0.0.1-9090-exec-4] c.k.springbootaoptest.aop.ServiceAspect  : =====================================================================================
+2022-12-22 21:14:44.827  INFO 11680 --- [http-nio-127.0.0.1-9090-exec-4] c.k.springbootaoptest.aop.ServiceAspect  : After Returning  Aspect Signature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.sayHello() This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@57dc89af
+2022-12-22 21:14:44.829  INFO 11680 --- [http-nio-127.0.0.1-9090-exec-4] c.k.springbootaoptest.aop.ServiceAspect  : =====================================================================================
+2022-12-22 21:14:45.317  INFO 11680 --- [http-nio-127.0.0.1-9090-exec-4] c.k.springbootaoptest.aop.ServiceAspect  : After AspectSignature : String com.kubilaycicek.springbootaoptest.service.MessageServiceImpl.sayHello() This :  com.kubilaycicek.springbootaoptest.service.MessageServiceImpl@57dc89af
+2022-12-22 21:14:45.317  INFO 11680 --- [http-nio-127.0.0.1-9090-exec-4] c.k.springbootaoptest.aop.ServiceAspect  : =====================================================================================
+2022-12-22 21:14:45.318  INFO 11680 --- [http-nio-127.0.0.1-9090-exec-4] c.k.springbootaoptest.aop.ServiceAspect  : StopWatch 'MessageController->sayHello': running time = 3190936600 ns
+---------------------------------------------
+ns         %     Task name
+---------------------------------------------
+3190936600  %100  sayHello
+
