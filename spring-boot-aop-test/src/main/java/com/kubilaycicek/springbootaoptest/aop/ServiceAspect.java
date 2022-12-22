@@ -26,6 +26,8 @@ public class ServiceAspect {
     public void after(JoinPoint joinPoint) {
         log.info("After Aspect" + SIGNATURE_TEXT + joinPoint.getSignature() + " " + THIS_TEXT + " " + joinPoint.getThis());
         log.info("=====================================================================================");
+        log.info("=====================================================================================");
+        log.info("=====================================================================================");
     }
 
     @AfterReturning("execution(* com.kubilaycicek.springbootaoptest.service.*.*(..))")
@@ -38,6 +40,7 @@ public class ServiceAspect {
     public void afterThrowing(JoinPoint joinPoint) {
         log.warn("After Throwing Aspect " + SIGNATURE_TEXT + joinPoint.getSignature() + " " + THIS_TEXT + " " + joinPoint.getThis());
         log.info("=====================================================================================");
+
     }
 
     @Around("@annotation(com.kubilaycicek.springbootaoptest.annotation.LogExecutionTime)")
@@ -53,7 +56,7 @@ public class ServiceAspect {
         Object result = proceedingJoinPoint.proceed();
         stopWatch.stop();
 
-
+        log.info("Annotation Aspect");
         log.info(stopWatch.prettyPrint());
 
         return result;
